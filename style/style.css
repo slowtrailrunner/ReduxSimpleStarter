@@ -18,6 +18,10 @@
   border-radius: 4px;
 }
 
+.media .media-body {
+  padding: 0px 4px 4px 4px;
+}
+
 .list-group-item {
   cursor: pointer;
 }
