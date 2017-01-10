@@ -5,11 +5,12 @@ const ROOT_URL = `http://api.openweathermap.org/data/2.5/forecast?appid=${API_KE
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
+// action creator
 export function fetchWeather(city) {
-  const url = `{ROOT_URL}&q=${city},us`;
-
+  const url = `${ROOT_URL}&q=${city},us`;
   const request = axious.get(url);
 
+// returning the promis as the payload
   return {
     type: FETCH_WEATHER,
     payload: request,
